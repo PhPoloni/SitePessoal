@@ -1,0 +1,30 @@
+table {
+    border-collapse: collapse; /* Retira o espaço entre as células da tabela */    
+    -webkit-border-radius: 5px; /* Borda arredondada */
+    border-radius: 5px;
+    overflow: hidden;    
+    width: 100%;
+    margin:2% 0 2% 0;  
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3); /* Adiciona sombra ao container da tabela */
+    cursor: default; /* Altera o cursor do mouse */
+}
+
+table thead tr 
+{ 
+    background: #000; 
+    color: #FFF; 
+    text-transform: uppercase;
+    text-align: left;
+    padding: 2%;
+}
+
+/* Dois seletores compartilhando a mesma regra de formatação */
+table tbody td, table thead th { padding: 10px; }
+
+table tbody td {  border-bottom: 1px solid #ddd; }
+
+table tbody tr:hover{
+    background-color: yellow; cursor: crosshair;
+}
+
+.zebra { background: #EEE;}

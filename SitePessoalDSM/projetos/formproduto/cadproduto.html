@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device=width, initial scale=1.0">
+    <title>Cadastro de Produto</title>
+    <link rel="stylehseet" href="css/estilosprod.css">
+    <link rel="stylesheet" href="css/estilos_formularioprod.css">
+</head> 
+
+<body>
+    <div id="corpo">
+        <header>
+            <h1>Loja de Hardware</h1>
+        </header>
+
+        <form action="cadproduto.html" method="post" target="_blank" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Dados do Produto</legend>
+
+                <label>
+                    Descrição: <input type="text" name="txt_descrição" maxlength="20" placeholder="Modelo e Aplicações" autofocus required>
+                </label>
+
+                <label>
+                    Código: <input type="text" name="txt_codigo" placeholder="999-99" pattern="[0-9]{3}-[0-9]{2}" required>
+                </label>
+                
+                <p class="label-50">
+                    <span class="d-block">Vender em: </span>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="chk_vender" value="loja_virtual">
+                        Loja Virtual
+                    </label> 
+
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="chk_vender" value="loja_fisica">
+                        Loja Física
+                    </label>
+                </p>
+
+                <p class="label-50">
+                    <span class="d-block">Está em Promoção? </span>
+                    <label class="checkbox-inline">
+                        <input type="radio" name="rdo_promocao" value="S">
+                        Sim
+                    </label>
+
+                    <label class="checkbox-inline">
+                        <input type="radio" name="rdo_promocao" value="N" checked>
+                        Não
+                    </label>
+                </p>
+
+                <label>
+                    Especificações:
+                    <textarea name="txt_especificacoes" placeholder="Informações técnicas do produto" required></textarea>
+                </label>
+               
+                <label class="label-50">
+                    Preço de Custo: <input type="number" min="0" name="txt_preco_custo" required>
+                </label>
+                
+                <label class="label-50">
+                    Preço de Venda: <input type="number" min="0" name="txt_preco_venda" required>
+                </label>
+
+                <label>
+                    Foto: <input type="file" name="txt_foto" accept="image/*" required>
+                </label>
+
+                <label class="label-50">
+                    Categoria:
+                    <select name="txt_categoria" required>
+                        <option value="">Selecione...</option>
+                        <option value="">Processador</option>
+                        <option value="">Placa de Vídeo</option>
+                        <option value="">Placa Mãe</option>
+                        <option value="">Memória RAM</option>
+                        <option value="">SSD</option>
+                    </select>
+                </label>
+
+                <label class="label-50">
+                    Marca:
+                    <select name="txt_marca" required>
+                        <option value="" disabled>Selecione...</option>
+                        <optgroup label="Processador">
+                            <option value="1">AMD</option>
+                            <option value="2">Intel</option>
+                        </optgroup>
+                        <optgroup label="Memória RAM">
+                            <option value="3">Kingston</option>
+                            <option value="4">Adata</option>
+                            <option value="5">Corsair</option>
+                        </optgroup>
+                        <optgroup label="Placas de Vídeos">
+                            <option value="6" selected>Nvidia</option>
+                            <option value="7">EVGA</option>
+                            <option value="8">Galax</option>
+                        </optgroup>
+                    </select>
+                </label>
+            </fieldset>
+
+            <p class="center">
+                <button type="submit" class="botao-enviar">Salvar</button>
+                <button type="reset">Limpar</button>
+            </p>
+        </form>
+    </div>
+</body>
+</html>

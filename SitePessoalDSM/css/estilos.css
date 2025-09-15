@@ -1,0 +1,293 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+    background-color:#635e5c ;
+}    
+
+nav {
+    background-color: #414141;
+    height: 6vh;
+    display: flex ;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    justify-content: left;
+}
+
+ul li {
+    margin-inline: 5px;
+    list-style-type:none;
+    font-family: 'Holtwood One SC', serif;
+    color:rgb(233, 222, 188);
+    display: flex;
+    align-items: center;
+}
+
+ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color:rgb(155, 119, 69)
+}
+
+article {
+    background-color: rgb(233, 222, 188);
+    margin-left: 8%;
+    margin-right: 8%;
+    min-height:94vh;
+}
+
+ .nome {
+    display: flex;
+    align-items: center;
+    float: right;
+    word-spacing: 0px;
+    font-size: 30px;
+    font-family: 'Holtwood One SC', serif;
+    margin: 0.01px;
+    color:rgb(233, 222, 188);
+}    
+
+.index {
+    position: relative;
+    text-align: center;
+    font-family: 'Holtwood One Sc', serif;
+    border: 5px double black;
+    font-size: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+footer {
+    background-color: #414141;
+    height: 35.5px;
+    display: flex;
+    align-items: center;
+}
+
+.rodape {
+    word-spacing: 0px;
+    font-family: 'Holtwood One Sc', serif;
+    color:rgb(233, 222, 188)
+}
+
+.selecionado {
+    color:rgb(214, 144, 79)
+}
+
+.img1 {
+    margin: auto;
+    display: block;
+    padding: 10%;
+}
+
+.sobre {
+    font-family: 'Holtwood One Sc', serif;
+    margin-left: 5px;
+    font-size: 35px
+}
+
+.feedback {
+    font-family: 'Holtwood One Sc', serif;
+    margin-left: 5px;
+    font-size: 35px;
+    padding-top: 20px;
+}
+
+.define {
+    font-family: 'Holtwood One Sc', serif;
+    margin-top: 130px;
+    margin-left: 5px;
+    font-size: 35px;
+}
+
+.apresentacao, .projetos {
+    margin-left: 10px;
+    margin-top: 8px;
+    font-size: 22px;
+    font-family: 'DejaVu Sans Mono', monospace
+}
+
+.eu {
+    float: right; 
+    width: 180px;
+    height: 320px;
+    margin-right: 40px;
+}
+
+.eubombado {
+    float: right;
+    width: 120px;
+    height: 120px;
+    margin-right: 130px;
+    
+}
+
+.projetos {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.arroba {
+    float: right;
+    margin-right: 920px;
+    margin-top: 15px;
+    font-family: 'DejaVu Sans Mono', monospace;
+}
+
+.arrobatt {
+    float: right;
+    margin-right: 900px;
+    margin-top: 15px;
+    font-family: 'DejaVu Sans Mono', monospace;
+}
+
+.redesocial {
+    text-decoration: none;
+    color: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    padding: 10px;
+}
+
+input {
+    width: 200px;
+    height: 25px;
+}
+
+textarea {
+    width: 300px;
+    height: 150px;
+}
+
+label, input, textarea { 
+    display: block;
+}
+
+.form, .fatec {
+    font-family: 'DejaVu Sans Mono', monospace
+}
+
+.fatec {
+    margin-left: 10px;
+}
+
+.center {
+   padding-left: 2%;
+}
+
+button {
+    height: 30px;
+    padding: 0px 15px 0px 15px;
+    margin-right: 10px;
+    font-family: 'DejaVu Sans Mono', monospace;
+    font-size: 16px;
+    background-color: rgb(243, 225, 199);
+}
+
+.chegar {
+    font-family: 'Holtwood One Sc', serif;
+    margin-left: 5px;
+    font-size: 35px
+}
+
+iframe {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.marche {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+}
+
+.agora_voce_me_ve
+{
+    padding-top: 1%;
+    display: grid;
+}
+
+.youtube {
+    text-decoration: none;
+    color: inherit;
+}
+
+article h3:last-child
+{
+    padding-top: 2%;
+}
+
+@keyframes example {
+    0% {left: 500px; right: 0px;}
+    100% {left: 0px; right: 50px;}
+  }
+  
+.nome p {
+    position: relative;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-iteration-count: alternate-reverse;
+}
+
+@keyframes maneiro {
+    0%   {left: 0px; top: 0px;}
+    25%  {left: 200px; top: 0px;}
+    50%  {left: 0px; top: 0px}
+    75%  {left: -200px; top: 0px;}
+    100%  {left: 0px; top:0px;}
+}
+
+.img1 {
+    position: relative;
+    animation-name: maneiro;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s;
+}
+
+.emojitrabalho {
+    -webkit-box-reflect: below -29px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+
+.eubombado {
+    transition: .8s;
+ }
+  
+.eubombado:hover {
+    width: 150px;
+    height: 150px;
+    transform: scale(1.15);
+}
+
+.eu {
+    transition: 0.8s;
+}
+  
+.eu:hover {
+    transform: scale(1.2);
+}
+
+.logo {
+    transition: width 2s, height 2s, transform 2s;
+}
+  
+.logo:hover {
+    transform: rotate(360deg);
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta charset="viewport" content="width=device-width, initial scale=1.0">
+    <title>Cadastro Cliente</title>
+    <link rel="stylesheet" href="css/estiloscli.css">
+    <link rel="stylesheet" href="css/estilos_formulariocli.css">  
+</head> 
+<body>
+    <div id="corpo">
+        <header>
+            <h1>Loja de Hardware</h1>
+        </header>
+        <main>
+            <h2>Cadastro do Cliente</h2>
+         
+            <form action="cadcliente.html" method="Get">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label>
+                        Nome: <input type="text" name="txt_nome" placeholder="Seu nome completo" required/>
+                    </label>
+                    <label class="label-50">
+                        E-mail: <input type="email" name="txt_email" placeholder="Seu melhor e-mail" required/>
+                    </label>
+                    <label class="label-50">
+                        Telefone: <input type="text" name="txt_telefone" placeholder="(99)99999-9999" pattern="[0-9]{2}[0-9]{5}-[0-9]{4}" required />
+                    </label>
+                    <label class="label-50">
+                        Data de Nascimento: <input type="date" name="txt_data_nasc" required />
+                    </label>
+                    <label class="label-50">
+                        CPF: <input type="number" name="txt_cpf" placeholder="Somente números" required />
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <label class="label-50">
+                        Rua: <input type="text" name="txt_rua" required />
+                    </label>
+                    <label class="label-50">
+                        Bairro: <input type="text" name="txt_bairro" required />
+                    </label>
+                    <label class="label-50">
+                        Cidade: <input type="text" name="txt_cidade" required />
+                    </label>
+                    <label class="label-50">
+                        Estado: 
+                        <select required>
+                            <option value="">Selecione...</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PR">Paraná</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <p class="center">
+                    <button type="submit" class="botao-enviar">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </p>
+
+            </form>              
+             
+        </main>
+        <footer>
+            Loja de Hardware 
+            <adress>
+                Rua dos bobos, 0
+                - Jaú - <abbr title="São Paulo - Brasil">SP</abbr>
+            </adress>
+        </footer>
+    </div>
+</body>
+</html>
